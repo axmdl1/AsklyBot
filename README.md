@@ -9,7 +9,7 @@ This project is a simple web-based **CRUD Application** that allows users to man
 - Darkhan Babakhanov
 
 ## Screenshot
-![Screenshot](https://github.com/axmdl1/AsklyBot/Capture.PNG)
+![Screenshot](https://github.com/axmdl1/AsklyBot/raw/main/Capture.PNG)
 
 ## How to Run the Project
 1. **Clone the Repository**:
