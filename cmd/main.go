@@ -35,6 +35,7 @@ func main() {
 	b.RegisterHandlerMatchFunc(filters.IsStart, handlers.Start)
 	b.RegisterHandlerMatchFunc(filters.IsHelp, handlers.Help)
 	b.RegisterHandlerMatchFunc(filters.IsBirthday, handlers.AddBirthday)
+	b.RegisterHandlerMatchFunc(filters.IsBirthdayInput, handlers.BirthdayInput)
 
 	b.RegisterHandlerMatchFunc(filters.IsAPI, handlers.GettingAPI)
 
