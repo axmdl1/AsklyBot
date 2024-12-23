@@ -1,10 +1,10 @@
 package handlers
 
 import (
+	"asklyBot/internal/texts"
 	"context"
 	"github.com/go-telegram/bot"
 	"github.com/go-telegram/bot/models"
-	"tgBotExample/internal/texts"
 )
 
 func Photo(ctx context.Context, b *bot.Bot, update *models.Update) {

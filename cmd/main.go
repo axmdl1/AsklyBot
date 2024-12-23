@@ -1,12 +1,12 @@
 package main
 
 import (
+	"asklyBot/internal/filters"
+	"asklyBot/internal/handlers"
+	"asklyBot/pkg/systems"
 	"context"
 	"os"
 	"os/signal"
-	"tgBotExample/internal/filters"
-	"tgBotExample/internal/handlers"
-	"tgBotExample/pkg/systems"
 
 	"github.com/go-telegram/bot"
 	"github.com/go-telegram/bot/models"

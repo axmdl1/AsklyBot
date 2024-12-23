@@ -1,4 +1,4 @@
-module tgBotExample
+module asklyBot
 
 go 1.23
 
