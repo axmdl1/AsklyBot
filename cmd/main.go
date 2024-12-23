@@ -3,6 +3,7 @@ package main
 import (
 	"asklyBot/internal/filters"
 	"asklyBot/internal/handlers"
+	"asklyBot/pkg/database"
 	"asklyBot/pkg/systems"
 
 	"context"
@@ -35,8 +36,12 @@ func main() {
 	b.RegisterHandlerMatchFunc(filters.IsHelp, handlers.Help)
 	b.RegisterHandlerMatchFunc(filters.IsBirthday, handlers.AddBirthday)
 
+	b.RegisterHandlerMatchFunc(filters.IsAPI, handlers.GettingAPI)
+
 	b.RegisterHandlerMatchFunc(filters.IsPhoto, handlers.Photo)
 	b.RegisterHandlerMatchFunc(filters.IsVideo, handlers.Video)
+
+	database.Connect()
 
 	b.Start(ctx)
 }
